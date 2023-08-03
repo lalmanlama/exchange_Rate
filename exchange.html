@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Exchange App
+    </title>
+    <link rel="stylesheet" href="exchange.css">
+</head>
+<body>
+    <div id="container">
+        <div class="currency">
+            <select id="currencyOne" name="from">
+                <option value="USA">USA</option>
+            </select>
+        </div>
+        <input type="number" id="inputNumber" value="1" name="amount"><br>
+        <input type="text" id="displayRate" class="displayField"  value="Rate will display here"><br>
+      
+        <button id="btn">=</button>
+        <div class="currency">
+            <select id="currencyTwo" name="to">
+                <option value="USA">USA</option>
+            </select>
+        </div>
+            <div class="rate">
+                
+                <button id="rate" value="calculate" >convert</div>
+                <input type="text" class="displayField" id="demo">
+            </div>
+    </div>
+</body>
+<script src="exchange.js"> </script>
+</html>
