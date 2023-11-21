@@ -1,9 +1,9 @@
-key = "keyForCurrencyRate";
+key = "exRate";
 let exchangeRatesObj = {
     updateExchangeRates: function() {
         let time = this.timeUpdate();
         console.log(time);
-       if (time > 3600000) {    // update the data if fetched dada is older than 1 hour
+       /*if (time > 3600000) {    // update the data if fetched dada is older than 1 hour
             fetch('https://api.fastforex.io/fetch-all?api_key=fa13a7ec75-72e25e691c-ryi50q')// fetching data from server
             .then((res) => res.json())
             .then((data) => {
@@ -12,7 +12,7 @@ let exchangeRatesObj = {
             });
             let savedDate = Date.now();
             localStorage.setItem("savedTime",savedDate); // fetched timeis stored in localstorage
-        }
+        }*/
     },
     getExchangeRatesLocally: function() {
         let newObj;
